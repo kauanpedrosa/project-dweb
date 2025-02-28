@@ -271,6 +271,27 @@ footer .line-footer a:hover{
   text-decoration: underline;
 }
 
+.linkedin-container {
+  position: relative; /* Mantém o selo dentro do contexto do li */
+  display: inline-block;
+}
+
+.linkedin-selo {
+  display: none;
+  position: absolute;
+  top: 30px; /* Ajuste conforme necessário */
+  left: 0;
+  background-color: transparent;
+  padding: 10px;
+  border-radius: 5px;
+  z-index: 1000; /* Garante que apareça acima de outros elementos */
+}
+
+.linkedin-container:hover .linkedin-selo {
+  display: block;
+}
+
+
 @media screen and (max-width: 1020px){
 
   /* CLASSES GERAIS */
